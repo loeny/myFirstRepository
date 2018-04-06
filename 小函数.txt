@@ -1,3 +1,4 @@
+1、修改数据库密码
 mysqladmin -u root -p pass123 password pass456
 
-afds
+
