@@ -1,4 +1,6 @@
 1、修改数据库密码
-mysqladmin -u root -p pass123 password pass456
+  mysqladmin -u root -p pass123 password pass456
+2、修改cmd编码
+  chcp 65001
 
 
