@@ -1,2 +1,3 @@
 mysqladmin -u root -p pass123 password pass456
 
+afds
