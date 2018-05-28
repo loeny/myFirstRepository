@@ -10,4 +10,10 @@ mysql> alter table address modify column city varchar(50);
 4、正则表达式
 http://www.zjmainstay.cn/deep-regexp#%E6%A6%82%E5%BF%B5%E5%9B%9B%E7%8E%AF%E8%A7%86%E6%96%AD%E8%A8%80%E9%9B%B6%E5%AE%BD%E6%96%AD%E8%A8%80
 
-
+5、 下面php程序输出的内容是什么? 为什么? 
+<?php 
+$str = "aa\tbb\tcc"; 
+@list($a, $b, $c) = explode('\t', $str); 
+echo $a,$b,$c; 
+?> 
+aa  bb   cc;//'\t'不会以\t切割字符串所以。。。,'\t'换成"\t"就被切割  单引号换成双引号
