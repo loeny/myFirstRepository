@@ -17,3 +17,14 @@ $str = "aa\tbb\tcc";
 echo $a,$b,$c; 
 ?> 
 aa  bb   cc;//'\t'不会以\t切割字符串所以。。。,'\t'换成"\t"就被切割  单引号换成双引号
+
+6.PHP 不使用第三个变量实现交换两个变量的值
+
+//方法一
+$a.=$b;
+$b=str_replace($b,"",$a);
+$a=str_replace($b,"",$a);
+
+//方法二
+list($b,$a)=array($a,$b);
+var_dump($a,$b);
