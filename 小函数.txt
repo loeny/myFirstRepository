@@ -28,3 +28,17 @@ $a=str_replace($b,"",$a);
 //方法二
 list($b,$a)=array($a,$b);
 var_dump($a,$b);
+
+19、isset() 、empty()与is_null的区别
+
+1、当变量未定义时，is_null() 和“参数本身”是不允许作为参数判断的，会报Notice警告错误；
+
+2、empty , isset首先都会检查变量是否存在，然后对变量值进行检测。而is_null 和 “参数本身”只是直接检查变量值，是否为null，因此如果变量未定义就会出现错误！
+
+3、isset()：仅当null和未定义，返回false；
+
+4、empty()：""、0、"0"、NULL、FALSE、array(),未定义，均返回true；
+
+5、is_null()：仅判断是否为null，未定义报警告；
+
+6、变量本身作为参数，与empty()一致，但接受未定义变量时，报警告；
