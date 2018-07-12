@@ -48,3 +48,5 @@ echo "$a",'$a',"\\\$a","${a}","$a"."$a","$a"+"$a";
 
 得到的结果是： 
 3$a\$a3336   转义符不输出
+
+/<tr\s* class=\"kl8_even\">\s*<td>.*?<\/td>\s*<td>.*?<\/td>\s*<td>.*?<\/td>\s*<td>.*?<\/td>\s*<td>.*?<\/td>\s*<td>.*?<\/td>\s*<\/tr>/.exec(document.body.innerHTML);
